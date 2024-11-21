@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Area</th>
+                <th>Actions</th> <!-- New column for buttons -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User data will be inserted here -->
+        </tbody>
+    </table>
+    
+    <!-- Add Button -->
+    <button id="add-user-button">Add User</button>
+    
+    <!-- Add User Modal -->
+    <div id="add-user-modal" style="display: none;">
+        <h3>Add New User</h3>
+        <button class="close-modal">X</button>
+        <form id="add-user-form">
+            <label>
+                Name: <input type="text" name="name" required>
+            </label><br>
+            <label>
+                Email: <input type="email" name="email" required>
+            </label><br>
+            <label>
+                Mobile: <input type="text" name="mobile" required>
+            </label><br>
+            <label>
+                Area: <input type="text" name="area" required>
+            </label><br>
+            <button id="btnb" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
